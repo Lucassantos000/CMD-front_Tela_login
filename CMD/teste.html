@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#C1D2CF">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    
+   
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/page-landing.css">
+
+    <title>CMD Academy | Sua plataforma de network digital</title>
+
+    <!-- Adicionar fontes -->
+    <!-- Fonte Rajdhani-->
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https: //fonts.googleapis.com/css2? family = Rajdhani: wght @ 300 & display = swap "rel =" stylesheet ">
+
+<!-- Fonte RALEWAY -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+
+    <style type="text/css">
+        
+        .bg_modal{
+            /*border: 2px red solid;*/
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+            position: fixed;
+            z-index: 5;
+            top:0px;
+            left:0px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+
+
+        .bg_modal.mostrar{
+            display: flex;
+
+
+        }
+
+        
+        .modal{
+            position: relative;
+            border-radius: 15px;
+            background-color: #fff;
+           /* border: 2px red solid;*/
+            width: 35% ;
+            height:90%;
+            
+        
+              }
+
+          
+              
+        .div_img{
+            /*border: 2px red solid;*/
+            height: 17%;
+                
+        }        
+
+        .imagem_modal{
+           /* border: 2px red solid;*/
+            width: 20%;
+            height: 100%;
+            margin: 10px 38% 20px 41%;
+
+               }   
+
+        .div_inputs{
+            /*border: 2px red solid;*/
+            margin:2% 0 0 0;
+            top: 0px;
+            height: 20%;
+           
+
+        }
+
+        .inputs{
+            padding: 5% 2% 2% 2%;
+            margin: 0px 15% 0px 12%;
+            font-size: 2.8rem;
+            font-family: "Rajdhani", sans-serif;
+            width: 75%;
+            height: 75%;
+            border: 3px #006C88 solid; 
+            border-radius: 10px;
+            left: 15px;
+            color: #006C88;
+
+
+        }     
+     
+        .submit_boton{
+            background: rgb(57,184,217);
+            background: linear-gradient(90deg, rgba(57,184,217,1) 0%, rgba(19,146,227,1) 49%, rgba(49,105,199,1) 100%);
+            padding: 2px 0 4rem 0;
+            margin: 0 20% 0 25%;
+            border: 2px #3169c7 solid;
+            border-radius: 15px;
+            width: 50%;
+            height: 1%;
+            font-size: 3.5rem;
+            font-family: "Rajdhani", sans-serif;
+            cursor: pointer;
+            color:#FFFFFF;
+            font-weight: 200;
+           
+            
+        } 
+        .paragrafo_submit{
+            padding-bottom:10px; 
+            font: bold;
+            text-align: center;
+            font-size: 2.1rem;
+            font-family: "Rajdhani", sans-serif;
+            text-decoration: none;
+        }            
+
+          .paragrafo_submit_entrar{
+            padding-top: 10px;
+            font: bold;
+            text-align: center;
+            font-size: 0.2em;
+            font-family: "Rajdhani", sans-serif;
+            text-decoration: none;
+        } 
+
+        .xsair{
+             width: 100%;
+             height: 1% 
+             margin-top: 10px;
+             padding-right: 20px;
+             
+             }  
+
+        .text_sair{
+            font-style:bold;
+            font-size: 2rem;
+            font-family:'Raleway';
+            text-align:right; 
+            padding-right:25px; 
+            padding-top: 20px; 
+            cursor: pointer;
+
+        }         
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="CMD">
+
+            <h2 style=" font-size: 4.0rem; ">Sua plataforma de network digital</h2>
+        </div>
+        <!--logo-container-->
+       
+        <img class="hero-img" src="img/image.png" alt="Plataforma de network">
+        
+        <div class="buttons-container">
+            <a class="login" >
+                
+                Login
+            </a>
+
+            <a class="cadastro">
+                
+                Cadastro
+            </a>
+        </div>
+        <!--buttons-container-->
+
+        <p class="total-connections">
+           Total de 251 pessoas conectadas <br>
+           <img style="width: 40px; height: 40px; " src="img/shakehand.png" alt="ShakeHand">
+        </p>
+        
+        <!--total-connections-->
+    
+    </div>
+
+
+    <div id = "modalogin" class="bg_modal  "> 
+           
+           <div class="modal">
+               
+             <div class=".xsair" ">
+                    <h2 class="text_sair" "> X </h2>
+
+                </div>
+
+                <div class="div_img">
+                 <img class="imagem_modal" src="img/logo.png" alt="CMS_PHOTO">
+                </div>
+
+                 
+
+
+              <form style="height:65% "> 
+
+                                          
+                     <div class="div_inputs">
+                             <input class="inputs" type="text" name="email " id="email" placeholder="Email">
+                     </div>
+                    
+                      <div class="div_inputs">
+                            
+                             <input class="inputs" type="password" name="senha" id="senha" placeholder="Senha">
+                     </div>
+
+                      <div class="div_inputs">
+                             <input class="submit_boton" type="submit" name="entrar" value="Entrar">
+                             <p class="paragrafo_submit_entrar"> <a href=""> Esqueci a senha</a> </p>
+                             <p class="paragrafo_submit_entrar">Não tem conta?<a href="login.html"> Conecte-se </a> </p>
+                     </div>
+
+                </form>               
+                   
+            
+          </div>     
+    </div>
+
+
+    <div id = "modalcad" class="bg_modal "> 
+           
+           <div class="modal">
+
+          <div class=".xsair" ">
+                    <h2 class="text_sair"> X </h2>
+
+                </div>
+
+
+                <div class="div_img">
+                 <img class="imagem_modal" src="img/logo.png" alt="CMS_PHOTO">
+                </div>
+
+
+              <form style="height:65% "> 
+
+                    <div class="div_inputs">
+                       <input class="inputs"  type="text" name="usuario" id="usuario" placeholder="Nome Completo">
+                    </div>
+                      
+                     <div class="div_inputs">
+                             <input class="inputs" type="text" name="email " id="email" placeholder="Email">
+                     </div>
+                    
+                      <div class="div_inputs">
+                             <input class="inputs" type="password" name="senha" id="senha" placeholder="Senha">
+                     </div>
+
+                      <div class="div_inputs">
+                             <input class="submit_boton" type="submit" name="Continue" value="Continue">
+                             <p class="paragrafo_submit">Já tem Conta?<a href="login.html"> Conecte-se </a> </p>
+                     </div>
+
+                </form>               
+                   
+            
+          </div>     
+    </div>
+   
+
+     <script>
+        
+        function modalogin(modalID){
+        const modal = document.getElementById(modalID);
+        modal.classList.add('mostrar');
+        modal.addEventListener('click', (e) =>{
+           if(e.target.id == modalID || e.target.className == 'text_sair'){
+            modal.classList.remove('mostrar');
+           }
+        });         
+        }
+
+
+        const block1 = document.querySelector('.login');
+        /*console.log(block1);*/
+        block1.addEventListener('click' , function(){modalogin('modalogin');
+        })
+
+         function modalcad(modalID){
+        const modal = document.getElementById(modalID);
+        modal.classList.add('mostrar');
+        modal.addEventListener('click', (e) =>{
+           if(e.target.id == modalID || e.target.className == 'text_sair'){
+            modal.classList.remove('mostrar');
+           }
+        });         
+        }
+
+
+        const block = document.querySelector('.cadastro');
+        /*console.log(block);*/
+        block.addEventListener('click' , function(){modalcad('modalcad');
+        })
+
+        
+    
+
+    </script>  
+
+</body>
+
+</html>
+
