@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#C1D2CF">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    
+   
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/page-landing.css">
+
+    <title>CMD Academy | Sua plataforma de network digital</title>
+
+    <!-- Adicionar fontes -->
+    <!-- Fonte Rajdhani-->
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https: //fonts.googleapis.com/css2? family = Rajdhani: wght @ 300 & display = swap "rel =" stylesheet ">
+
+<!-- Fonte RALEWAY -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+
+    <style type="text/css">
+        
+        .bg_modal_flex{
+            /*border: 2px red solid;*/
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+            position: fixed;
+            z-index: 100;
+            top:0px;
+            left:0px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            
+
+        }
+
+
+        .bg_modal_flex.mostrar{
+            display: flex;
+
+
+        }
+
+        
+        .modal{
+          position: absolute;;
+
+          display:flex;
+          border-radius: 15px;
+          background-color: #fff;
+          width: 22%;
+          height: 60%;
+          flex-direction: column; 
+         }
+
+
+           .container_imagem{
+            display: flex;
+            flex-position:center;
+                        
+            width: 90%;
+            height: 25%;
+           }  
+
+          .imagem{
+            position: relative;
+            max-height: 50%;
+            max-height: 100%;
+            margin: 2% 30%  0 43%;
+            
+          }    
+
+          .container_formulario{
+            padding-top: 30px;
+            display: flex;
+            position: relative;
+            width: 100%;
+            flex-direction: column; 
+            flex-position: center;
+          }
+
+
+
+          .container_formulario input{
+          margin: 5% 15%;
+          padding: 15px 12px;
+          font-size: 12px;
+          object-position: relative;
+          width: 64%;
+          height: 24px;
+          border-radius: 15px;
+          border: 3px #00B3E2 solid; 
+          background: #FFFFFF
+
+          }
+
+          .texto{
+            display: flex;
+            flex-flow: column;
+
+            text-align: center;
+            font-size: 13px;
+
+          }
+
+          .input{
+            position: relative;
+            width: 40%;
+            height: 10%
+            font-size:15px;
+          }
+
+          .boton_submit{
+          /*background: rgb(57,184,217);*/
+          background: linear-gradient(90deg, rgba(57,184,217,1) 0%, rgba(19,146,227,1) 49%, rgba(49,105,199,1) 100%);
+          margin: 5% 15%;
+          display: flex;
+          flex-direction: column;   
+          object-position: relative;
+          width: 64%;
+          height: 34px;
+          border-radius: 15px;
+          
+          }
+
+          .botao{
+            position: relative;
+            padding-top: 9px;
+            border: none;
+            background: none;
+            font-size: 15px;
+            text-align: center;
+            color: white;
+            font-weight: 100%;
+                      }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container"> 
+        <div class="logo-container">
+            <img src="img/logo.png" alt="CMD">
+
+            <h2 style=" font-size: 4.0rem; ">Sua plataforma de network digital</h2>
+        </div>
+        <!--logo-container-->
+      
+         <img class="hero-img" src="img/image.png" alt="Plataforma de network">
+        
+       <div class="buttons-container">
+            <a class="login" >
+                 
+                Login
+            </a>
+
+            <a class="cadastro">
+                
+                Cadastro
+            </a>
+        </div>
+        <!--buttons-container-->
+
+        <p class="total-connections">
+           Total de 251 pessoas conectadas <br>
+           <img style="width: 40px; height: 40px; " src="img/shakehand.png" alt="ShakeHand">
+        </p>
+        
+        <!--total-connections-->
+
+
+
+        <!-- Modal -->
+
+        <div  class="bg_modal_flex" > 
+          
+          <div class="modal"> 
+
+            <div class="container_imagem">
+          <img class="imagem" src="img/logo.png" >
+          <p style="font-size: 20px; margin: 10px 0px; display: flex;">X</p>
+            </div>
+           
+
+            <div >
+              <form > 
+
+                                          
+                   <div class="container_formulario">
+
+                             <input  type="text" name="email " id="email" placeholder="Email">
+                     
+                  
+                            
+                             <input type="password" name="senha" id="senha" placeholder="Senha">
+                  
+                  </div>
+
+                  <div class="boton_submit" style="">
+                
+                            <input class="botao" type="submit" name="entrar" value="Entrar">
+
+                             
+                  </div>
+
+
+                  <dir class="texto">
+                   
+                          <p > <a href=""> Esqueci a senha</a> </p>
+                  </dir>
+
+                  <dir class="texto" style="padding-top: 4px;">
+                          <p> Não tem conta? <a href="login.html"> Conecte-se </a> </p>
+
+                  </dir>
+
+                </form>   
+
+          </div>
+
+          </div>
+       
+        </div>
+
+</body>
+
+</html>
+
