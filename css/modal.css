@@ -1,0 +1,143 @@
+.bg_modal_flex{
+            /*border: 2px red solid;*/
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+            position: fixed;
+            z-index: 100;
+            top:0px;
+            left:0px;
+            justify-content: center;
+            align-items: center;
+            display: none;
+            
+
+        }
+
+
+        .bg_modal_flex.mostrar{
+            display: flex;
+
+
+        }
+
+        
+        .modal{
+          position: absolute;;
+
+          display:flex;
+          border-radius: 15px;
+          background-color: #fff;
+          width: 22%;
+          height: 60%;
+          flex-direction: column; 
+         }
+
+
+           .container_imagem{
+            display: flex;
+            flex-position:center;
+                        
+            width: 90%;
+            height: 25%;
+           }  
+
+          .imagem{
+            position: relative;
+            max-height: 50%;
+            max-height: 100%;
+            margin: 2% 30%  0 43%;
+            
+          }    
+
+          .container_formulario{
+            padding-top: 30px;
+            display: flex;
+            position: relative;
+            width: 100%;
+            flex-direction: column; 
+          }
+
+
+
+          .container_formulario input{
+          margin: 2.5% 15%;
+          padding: 15px 12px;
+          font-size: 12px;
+          object-position: relative;
+          width: 64%;
+          height: 24px;
+          border-radius: 15px;
+          border: 3px #00B3E2 solid; 
+          background: #FFFFFF
+
+          }
+
+          .texto{
+
+            display: flex;
+            flex-flow: column;
+
+            text-align: center;
+            font-size: 13px;
+
+          }
+
+          .input{
+            position: relative;
+            width: 40%;
+            height: 10%
+            font-size:15px;
+          }
+
+          .boton_submit{
+          /*background: rgb(57,184,217);*/
+          background: linear-gradient(90deg, rgba(57,184,217,1) 0%, rgba(19,146,227,1) 49%, rgba(49,105,199,1) 100%);
+          margin: 5% 15%;
+          display: flex;
+          flex-direction: column;   
+          object-position: relative;
+          width: 64%;
+          height: 34px;
+          border-radius: 15px;
+          
+          }
+
+          .botao_entrar{
+            position: relative;
+            padding-top: 9px;
+            border: none;
+            background: none;
+            font-size: 15px;
+            text-align: center;
+            color: white;
+            font-weight: 100%;
+                      }
+
+          .botao_cadastro{
+            position: relative;
+            padding-top: 9px;
+            border: none;
+            background: none;
+            font-size: 15px;
+            text-align: center;
+            color: white;
+            font-weight: 100%;
+                      } 
+
+          .text_sair{
+            color: black;
+            cursor: pointer;
+          }   
+
+          .conecte-se{
+            font: blue;
+            cursor: pointer;
+            text-decoration: underline;
+          }   
+
+          .redireciona_cad{
+            font: blue;
+            cursor: pointer;
+            text-decoration: underline;
+          } 
